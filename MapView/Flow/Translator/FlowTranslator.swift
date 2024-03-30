@@ -13,12 +13,19 @@ class FlowTranslator {
     
     private let factory = FlowFactory()
     
+    let mainMiewModel = MainViewModel()
+    
     init(executor: FlowExecutor) {
         self.executor = executor
     }
     
     func startFlow() {
-        
+        showMain()
+    }
+    
+    private func showMain() {
+        let mainVC = factory.makeMainVC(mainMiewModel)
+        executor.showVC(mainVC)
     }
     
 }
