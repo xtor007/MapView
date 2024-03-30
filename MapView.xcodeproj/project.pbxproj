@@ -10,11 +10,15 @@
 		FF71935F2BB85DBF007746BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF71935D2BB85DBF007746BC /* LaunchScreen.storyboard */; };
 		FF7193712BB85E9A007746BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7193692BB85E9A007746BC /* Assets.xcassets */; };
 		FF7193722BB85E9A007746BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71936B2BB85E9A007746BC /* AppDelegate.swift */; };
-		FF7193732BB85E9B007746BC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF71936C2BB85E9A007746BC /* Info.plist */; };
 		FF7193742BB85E9B007746BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71936D2BB85E9A007746BC /* SceneDelegate.swift */; };
 		FF71937A2BB85F33007746BC /* FlowTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193792BB85F33007746BC /* FlowTranslator.swift */; };
 		FF71937C2BB85F5A007746BC /* FlowExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71937B2BB85F5A007746BC /* FlowExecutor.swift */; };
 		FF71937E2BB86085007746BC /* FlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71937D2BB86085007746BC /* FlowFactory.swift */; };
+		FF7193842BB86135007746BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193832BB86135007746BC /* MainView.swift */; };
+		FF7193882BB8615F007746BC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193872BB8615F007746BC /* MainViewModel.swift */; };
+		FF71938C2BB8633F007746BC /* ProcessedAgentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938B2BB8633F007746BC /* ProcessedAgentData.swift */; };
+		FF71938E2BB86378007746BC /* RoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938D2BB86378007746BC /* RoadState.swift */; };
+		FF7193902BB86605007746BC /* MapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938F2BB86605007746BC /* MapPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,11 @@
 		FF7193792BB85F33007746BC /* FlowTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTranslator.swift; sourceTree = "<group>"; };
 		FF71937B2BB85F5A007746BC /* FlowExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowExecutor.swift; sourceTree = "<group>"; };
 		FF71937D2BB86085007746BC /* FlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowFactory.swift; sourceTree = "<group>"; };
+		FF7193832BB86135007746BC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FF7193872BB8615F007746BC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FF71938B2BB8633F007746BC /* ProcessedAgentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedAgentData.swift; sourceTree = "<group>"; };
+		FF71938D2BB86378007746BC /* RoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadState.swift; sourceTree = "<group>"; };
+		FF71938F2BB86605007746BC /* MapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 		FF7193512BB85DBD007746BC /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				FF71938A2BB8630C007746BC /* Model */,
 				FF7193762BB85F09007746BC /* Flow */,
 				FF71936A2BB85E9A007746BC /* App */,
 				FF7193682BB85E9A007746BC /* Resources */,
@@ -107,8 +117,44 @@
 		FF7193782BB85F20007746BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF71937F2BB8610E007746BC /* Main */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FF71937F2BB8610E007746BC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FF7193812BB86118007746BC /* ViewModel */,
+				FF7193802BB86113007746BC /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FF7193802BB86113007746BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF7193832BB86135007746BC /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF7193812BB86118007746BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF7193872BB8615F007746BC /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF71938A2BB8630C007746BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF71938B2BB8633F007746BC /* ProcessedAgentData.swift */,
+				FF71938D2BB86378007746BC /* RoadState.swift */,
+				FF71938F2BB86605007746BC /* MapPoint.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +217,6 @@
 			files = (
 				FF7193712BB85E9A007746BC /* Assets.xcassets in Resources */,
 				FF71935F2BB85DBF007746BC /* LaunchScreen.storyboard in Resources */,
-				FF7193732BB85E9B007746BC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7193882BB8615F007746BC /* MainViewModel.swift in Sources */,
 				FF71937E2BB86085007746BC /* FlowFactory.swift in Sources */,
+				FF7193842BB86135007746BC /* MainView.swift in Sources */,
 				FF71937C2BB85F5A007746BC /* FlowExecutor.swift in Sources */,
+				FF7193902BB86605007746BC /* MapPoint.swift in Sources */,
+				FF71938E2BB86378007746BC /* RoadState.swift in Sources */,
+				FF71938C2BB8633F007746BC /* ProcessedAgentData.swift in Sources */,
 				FF7193722BB85E9A007746BC /* AppDelegate.swift in Sources */,
 				FF71937A2BB85F33007746BC /* FlowTranslator.swift in Sources */,
 				FF7193742BB85E9B007746BC /* SceneDelegate.swift in Sources */,
