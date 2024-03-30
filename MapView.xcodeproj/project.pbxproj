@@ -19,6 +19,7 @@
 		FF71938C2BB8633F007746BC /* ProcessedAgentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938B2BB8633F007746BC /* ProcessedAgentData.swift */; };
 		FF71938E2BB86378007746BC /* RoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938D2BB86378007746BC /* RoadState.swift */; };
 		FF7193902BB86605007746BC /* MapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938F2BB86605007746BC /* MapPoint.swift */; };
+		FF7193922BB868C5007746BC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193912BB868C5007746BC /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FF71938B2BB8633F007746BC /* ProcessedAgentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedAgentData.swift; sourceTree = "<group>"; };
 		FF71938D2BB86378007746BC /* RoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadState.swift; sourceTree = "<group>"; };
 		FF71938F2BB86605007746BC /* MapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoint.swift; sourceTree = "<group>"; };
+		FF7193912BB868C5007746BC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				FF7193832BB86135007746BC /* MainView.swift */,
+				FF7193912BB868C5007746BC /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				FF7193882BB8615F007746BC /* MainViewModel.swift in Sources */,
 				FF71937E2BB86085007746BC /* FlowFactory.swift in Sources */,
 				FF7193842BB86135007746BC /* MainView.swift in Sources */,
+				FF7193922BB868C5007746BC /* MapView.swift in Sources */,
 				FF71937C2BB85F5A007746BC /* FlowExecutor.swift in Sources */,
 				FF7193902BB86605007746BC /* MapPoint.swift in Sources */,
 				FF71938E2BB86378007746BC /* RoadState.swift in Sources */,

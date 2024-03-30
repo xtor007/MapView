@@ -12,7 +12,32 @@ struct MainView: View {
     @StateObject var viewModel: MainViewModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            MapView(viewModel: viewModel)
+                .aspectRatio(1, contentMode: .fill)
+            Spacer()
+            lastDataLine
+            Spacer()
+        }
+        .padding(16)
+        .background(Color.gray)
+        .onAppear {
+            viewModel.startSubscribingData()
+        }
+    }
+    
+    @ViewBuilder
+    var lastDataLine: some View {
+        if let lastPoint = viewModel.points.last {
+            Text("\(lastPoint.position.latitude) \(lastPoint.position.longitude) - \(lastPoint.state.name)")
+                .font(.system(size: 20, weight: .bold))
+                .foregroundColor(.blue)
+                .padding(8)
+                .background(Capsule().fill(.white))
+        } else {
+            Text("No Data")
+        }
     }
     
 }

@@ -15,6 +15,6 @@ struct MapPoint {
 }
 
 struct Position: Equatable {
-    let latitude: Int
-    let longitude: Int
+    let latitude: Double
+    let longitude: Double
 }

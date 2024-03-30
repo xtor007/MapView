@@ -25,4 +25,21 @@ enum RoadState: Codable {
         }
     }
     
+    var name: String {
+        switch self {
+        case .veryBad:
+            "Very Bad"
+        case .bad:
+            "Bad"
+        case .norm:
+            "Norm"
+        case .good:
+            "Good"
+        case .perfect:
+            "Perfect"
+        case .unknown:
+            "Unknown"
+        }
+    }
+    
 }
