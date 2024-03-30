@@ -20,6 +20,9 @@
 		FF71938E2BB86378007746BC /* RoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938D2BB86378007746BC /* RoadState.swift */; };
 		FF7193902BB86605007746BC /* MapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71938F2BB86605007746BC /* MapPoint.swift */; };
 		FF7193922BB868C5007746BC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193912BB868C5007746BC /* MapView.swift */; };
+		FF7193952BB87532007746BC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193942BB87532007746BC /* NetworkManager.swift */; };
+		FF7193982BB875B8007746BC /* MainViewNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193972BB875B8007746BC /* MainViewNetworkHelper.swift */; };
+		FF71939A2BB87A1A007746BC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7193992BB87A1A007746BC /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		FF71938D2BB86378007746BC /* RoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadState.swift; sourceTree = "<group>"; };
 		FF71938F2BB86605007746BC /* MapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoint.swift; sourceTree = "<group>"; };
 		FF7193912BB868C5007746BC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FF7193942BB87532007746BC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FF7193972BB875B8007746BC /* MainViewNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewNetworkHelper.swift; sourceTree = "<group>"; };
+		FF7193992BB87A1A007746BC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		FF7193512BB85DBD007746BC /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				FF7193932BB874F4007746BC /* Manager */,
 				FF71938A2BB8630C007746BC /* Model */,
 				FF7193762BB85F09007746BC /* Flow */,
 				FF71936A2BB85E9A007746BC /* App */,
@@ -82,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FF7193692BB85E9A007746BC /* Assets.xcassets */,
+				FF7193992BB87A1A007746BC /* Config.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 		FF71937F2BB8610E007746BC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FF7193962BB875A7007746BC /* Helper */,
 				FF7193812BB86118007746BC /* ViewModel */,
 				FF7193802BB86113007746BC /* View */,
 			);
@@ -158,6 +167,22 @@
 				FF71938F2BB86605007746BC /* MapPoint.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FF7193932BB874F4007746BC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FF7193942BB87532007746BC /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FF7193962BB875A7007746BC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FF7193972BB875B8007746BC /* MainViewNetworkHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7193952BB87532007746BC /* NetworkManager.swift in Sources */,
+				FF7193982BB875B8007746BC /* MainViewNetworkHelper.swift in Sources */,
 				FF7193882BB8615F007746BC /* MainViewModel.swift in Sources */,
+				FF71939A2BB87A1A007746BC /* Config.swift in Sources */,
 				FF71937E2BB86085007746BC /* FlowFactory.swift in Sources */,
 				FF7193842BB86135007746BC /* MainView.swift in Sources */,
 				FF7193922BB868C5007746BC /* MapView.swift in Sources */,

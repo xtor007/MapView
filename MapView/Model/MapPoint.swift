@@ -11,7 +11,6 @@ struct MapPoint {
     let position: Position
     let z: Int
     let state: RoadState
-    let updatedDate: Date
 }
 
 struct Position: Equatable {

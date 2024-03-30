@@ -17,7 +17,6 @@ struct ProcessedAgentData: Codable {
     let z: Int
     let latitude: Double
     let longitude: Double
-    let timestamp: Date
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -28,7 +27,6 @@ struct ProcessedAgentData: Codable {
         case z = "z"
         case latitude = "latitude"
         case longitude = "longitude"
-        case timestamp = "timestamp"
     }
     
 }
