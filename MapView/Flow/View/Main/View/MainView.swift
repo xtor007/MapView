@@ -15,7 +15,7 @@ struct MainView: View {
         VStack {
             Spacer()
             MapView(viewModel: viewModel)
-                .aspectRatio(1, contentMode: .fill)
+                .aspectRatio(1, contentMode: .fit)
             Spacer()
             lastDataLine
             Spacer()

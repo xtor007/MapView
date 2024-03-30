@@ -5,7 +5,7 @@
 //  Created by Anatoliy Khramchenko on 30.03.2024.
 //
 
-import Foundation
+import SwiftUI
 
 enum RoadState: Codable {
     
@@ -39,6 +39,23 @@ enum RoadState: Codable {
             "Perfect"
         case .unknown:
             "Unknown"
+        }
+    }
+    
+    var color: Color {
+        switch self {
+        case .veryBad:
+            return .red
+        case .bad:
+            return .orange
+        case .norm:
+            return .yellow
+        case .good:
+            return .green
+        case .perfect:
+            return .mint
+        case .unknown:
+            return .gray
         }
     }
     
